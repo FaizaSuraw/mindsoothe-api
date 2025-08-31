@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import JournalEntryListCreateView, JournalEntryDetailView
+from .views import JournalEntryListCreateView, JournalEntryRetrieveUpdateDestroyView
 
 urlpatterns = [
-    path('entries/', JournalEntryListCreateView.as_view(), name='entries-list-create'),
-    path('entries/<int:pk>/', JournalEntryDetailView.as_view(), name='entries-detail'),
+    path('entries/', JournalEntryListCreateView.as_view(), name='journalentry-list-create'),
+    path('entries/<int:pk>/', JournalEntryRetrieveUpdateDestroyView.as_view(), name='journalentry-detail'),
 ]
