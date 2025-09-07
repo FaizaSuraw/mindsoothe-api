@@ -5,10 +5,12 @@ import Dashboard from "./pages/Dashboard";
 import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
-  // Automatically detect if running on GitHub Pages
+  // More robust basename detection for GitHub Pages
   const basename = process.env.NODE_ENV === 'production' 
-    ? '/mindsoothe-api' 
+    ? (process.env.PUBLIC_URL || '/mindsoothe-api')
     : '';
+
+  console.log('Current basename:', basename); // For debugging
 
   return (
     <Router basename={basename}>
