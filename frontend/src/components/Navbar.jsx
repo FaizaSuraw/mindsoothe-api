@@ -32,6 +32,14 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
+           <Link
+              to="/"
+              className="text-slate-700 hover:text-blue-600 font-medium transition-all duration-200 relative group"
+            >
+              Home
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-indigo-600 group-hover:w-full transition-all duration-300"></span>
+            </Link>
+            
             <Link
               to="/dashboard"
               className="text-slate-700 hover:text-blue-600 font-medium transition-all duration-200 relative group"
@@ -39,6 +47,7 @@ const Navbar = () => {
               Dashboard
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-indigo-600 group-hover:w-full transition-all duration-300"></span>
             </Link>
+
             <Link
               to="/profile"
               className="text-slate-700 hover:text-blue-600 font-medium transition-all duration-200 relative group"
