@@ -1,5 +1,6 @@
 {
-  "name": "mindsoothe-frontend",
+  "name": "frontend",
+  "homepage": "https://faizasuraw.github.io/mindsoothe-api",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
