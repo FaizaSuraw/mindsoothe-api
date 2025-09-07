@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/mindsoothe-api/static/css/main.d0147435.css",
-    "main.js": "/mindsoothe-api/static/js/main.b51eca53.js",
+    "main.js": "/mindsoothe-api/static/js/main.ef40763e.js",
     "index.html": "/mindsoothe-api/index.html",
     "main.d0147435.css.map": "/mindsoothe-api/static/css/main.d0147435.css.map",
-    "main.b51eca53.js.map": "/mindsoothe-api/static/js/main.b51eca53.js.map"
+    "main.ef40763e.js.map": "/mindsoothe-api/static/js/main.ef40763e.js.map"
   },
   "entrypoints": [
     "static/css/main.d0147435.css",
-    "static/js/main.b51eca53.js"
+    "static/js/main.ef40763e.js"
   ]
 }
