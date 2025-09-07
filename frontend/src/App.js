@@ -6,7 +6,7 @@ import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/mindsoothe-api">
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
