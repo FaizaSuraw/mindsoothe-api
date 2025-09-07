@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/LoginPage";
 import Register from "./pages/RegisterPage";
 import Dashboard from "./pages/Dashboard";
@@ -6,7 +6,7 @@ import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
