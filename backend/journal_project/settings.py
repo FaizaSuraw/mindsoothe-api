@@ -11,7 +11,7 @@ SECRET_KEY = 'django-insecure-your-secret-key-here'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost',  'mindsoothe-api.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost',  'mindsoothe-api.onrender.com', '0.0.0.0']
 
 # Application definition
 INSTALLED_APPS = [
