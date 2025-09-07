@@ -5,8 +5,13 @@ import Dashboard from "./pages/Dashboard";
 import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
+  // Automatically detect if running on GitHub Pages
+  const basename = process.env.NODE_ENV === 'production' 
+    ? '/mindsoothe-api' 
+    : '';
+
   return (
-    <Router>
+    <Router basename={basename}>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
