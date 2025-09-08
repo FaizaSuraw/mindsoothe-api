@@ -128,8 +128,7 @@ SIMPLE_JWT = {
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
+    "https://faizasuraw.github.io",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
