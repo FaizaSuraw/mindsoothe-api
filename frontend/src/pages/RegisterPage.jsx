@@ -19,8 +19,8 @@ export default function Register() {
     }
     try {
       setLoading(true)
-      await api.post("auth/register/", formData)
-      const loginRes = await api.post("auth/login/", {
+      await api.post("register/", formData)
+      const loginRes = await api.post("login/", {
         username: formData.username,
         password: formData.password,
       })

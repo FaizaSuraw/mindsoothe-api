@@ -15,7 +15,7 @@ export default function Login() {
     setError("")
     try {
       setLoading(true)
-      const response = await api.post("auth/login/", formData)
+      const response = await api.post("login/", formData)
       localStorage.setItem("tokens", JSON.stringify(response.data))
       setLoading(false)
       navigate("/dashboard")

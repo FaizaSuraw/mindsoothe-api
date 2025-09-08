@@ -19,7 +19,7 @@ const PrivateRoute = ({ children }) => {
           setIsAuth(false);
           return;
         }
-        await api.get("/auth/profile/", {
+        await api.get("profile/", {
           headers: { Authorization: `Bearer ${tokens.access}` },
         });
         setIsAuth(true);

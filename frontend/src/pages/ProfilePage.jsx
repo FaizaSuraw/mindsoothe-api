@@ -20,7 +20,7 @@ const ProfilePage = () => {
     const fetchProfile = async () => {
       try {
         const tokens = JSON.parse(localStorage.getItem("tokens"))
-        const response = await api.get("auth/profile/", {
+        const response = await api.get("profile/", {
           headers: { Authorization: `Bearer ${tokens.access}` },
         })
         setUser(response.data)
@@ -60,7 +60,7 @@ const ProfilePage = () => {
       if (formData.password) updateData.append("password", formData.password)
       if (avatar) updateData.append("avatar", avatar)
 
-      const response = await api.put("auth/profile/", updateData, {
+      const response = await api.put("profile/", updateData, {
         headers: {
           Authorization: `Bearer ${tokens.access}`,
           "Content-Type": "multipart/form-data",
