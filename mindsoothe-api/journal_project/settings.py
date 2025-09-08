@@ -130,5 +130,3 @@ SIMPLE_JWT = {
 CORS_ALLOWED_ORIGINS = [
     "https://faizasuraw.github.io",
 ]
-
-CORS_ALLOW_CREDENTIALS = True
